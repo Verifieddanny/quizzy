@@ -7,3 +7,4 @@ load_dotenv(override=True)
 class Config:
     DATABASE_URL = os.environ.get('DATABASE_URL')
     DATABASE_NAME = os.environ.get('DATABASE_NAME')
+    JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
