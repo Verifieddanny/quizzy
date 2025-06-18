@@ -109,6 +109,6 @@ class DB:
         return {
             "total": total,
             "top_5_users": list(top_5),
-            "rank": list(user_rank)[0]['rank'],
+            "rank": list(user_rank)[0]['rank'] if user_rank else None,
             "user_quiz_data": user
         }
