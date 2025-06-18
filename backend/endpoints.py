@@ -186,7 +186,7 @@ def fetch_questions_by_category_id(category_id):
             description: Questions fetched successfully for the specified category
             examples:
                 application/json: {
-                    "msg": "Questions fetched for category <category_id> fetched successfully",
+                    "msg": "Questions for category <category_id> fetched successfully",
                     "success": True,
                     "data": [
                         {
@@ -226,7 +226,7 @@ def fetch_questions_by_category_id(category_id):
         
     questions = DB.fetch_questions_by_category(category_id)    
     return Response.success(
-        msg=f'Questions fetched for category <{category_id}> fetched successfully',
+        msg=f'Questions for category <{category_id}> fetched successfully',
         data=questions
     )
 

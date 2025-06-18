@@ -13,7 +13,7 @@ from random_username.generate import generate_username as gen_username
 
 def generate_user_id():
     """
-    Generate a uuid hex used as the user's password
+    Generate a uuid hex used as the user's id
     """
     return uuid4().hex
 
