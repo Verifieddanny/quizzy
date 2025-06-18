@@ -274,7 +274,7 @@ def record_quiz_results():
                 }
     """
     score = request.json.get('score')
-    if not score:
+    if score is None:
         return Response.error(msg="'score' is a required field")
     else:
         try:
